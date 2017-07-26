@@ -62,10 +62,13 @@ public class OrbSelect : MonoBehaviour
 		{
 			Vector3 newGlassLoc = new Vector3 (transform.position.x, -20f, 3f);	//move the glass orb below the viewable area
 			glassOrb.transform.position = newGlassLoc;
+			glassOrb.transform.parent = null;			//remove from parent so it does not interfere with CheckOrder method in MainGameManager
 		}
 			
 		orb.transform.parent = myPedestalLoc;						//move the orb that was on the Swap Pedestal to the selected pedestal
 		transform.localPosition = Vector3.zero + new Vector3 (0f, 0.88f, 0f);
 		isOnSwap = false;
+
+		GameManager.instance.CheckOrder();
 	}
 }
