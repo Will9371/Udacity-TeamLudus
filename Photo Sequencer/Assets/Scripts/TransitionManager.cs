@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Attach this script to: EventSystem
 public class TransitionManager : MonoBehaviour 
 {
 	//***Singleton code

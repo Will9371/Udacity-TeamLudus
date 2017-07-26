@@ -1,16 +1,22 @@
-Items needed
+* = Items needed for a complete project
++ = Items project should have, but not absolutely necessary
 
 Design:
-- Set of 5 images telling a story
+*- Set of 5 images telling a story
 	- Use the 360 degree camera in Google Streetview 
 	(stitches together multiple photographs)
 	- More sets of images = better!
-- Fancier pedestals, or some other static object that acts as a container for the images
-- Scene environment
-- Orbs glow when user hovering over them?
++- Fancier pedestals, or some other static object that acts as a container for the images
++- Scene environment
+- Image Orbs glow when user hovering over them (or in some way show the user they are being aimed at)
 
 Mechanics:
-- Randomize order of images on start of game
-- Determine when player has the images in the correct order
+*- Randomize order of images on start of game
+*- Determine when player has the images in the correct order
+*- Reset puzzle on completion
+- Option to switch to a different puzzle, there are several ways this could be done
+	- Option 1: forward and backwards buttons that swap out sets of orbs
+	- Option 2: Picture sets are in a series, player moves between them like levels
+	- Option 3: Other ideas??
 - Continuous movement when image orbs move from one pedestal to another
 - Continuous movement during transition from game mode to view image mode
