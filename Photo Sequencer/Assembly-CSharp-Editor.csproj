@@ -134,7 +134,7 @@
  <HintPath>D:/Development/Unity/5.6.1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>D:/Will Projects/Udacity/Group Project/Photo Sequencer/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>D:/Will Projects/Udacity/Group Project/Udacity-TeamLudus/Photo Sequencer/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>D:/Development/Unity/5.6.1/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
