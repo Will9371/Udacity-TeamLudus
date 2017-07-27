@@ -46,6 +46,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\FadeIntro.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\FadeOrgan.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\colliders\collider_baroque_choir.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\colliders\collider_baroque_organ_major.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\colliders\collider_baroque_organ_minor.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\colliders\collider_cello_major.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\colliders\collider_dynamic_organ_fort.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\colliders\collider_dynamic_organ_fortissimo.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\colliders\collider_dynamic_organ_medium.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\colliders\collider_dynamic_organ_soft.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\colliders\collider_gregorian_chant.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\colliders\collider_gregorian_ensemble.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\colliders\collider_medieval_organ_major.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\colliders\collider_medieval_organ_minor.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\colliders\collider_stop_church_music.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\Scripts\sacred_music.cs" />
+     <Compile Include="Assets\Authentic_Sacred_Church_Music_Free\church_music_master_script.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudio.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioListener.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioRoom.cs" />
@@ -114,11 +131,13 @@
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
      <Compile Include="Assets\Scripts\OrbSelect.cs" />
      <Compile Include="Assets\Scripts\TransitionManager.cs" />
      <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
+     <None Include="Assets\Authentic_Sacred_Church_Music_Free\README.txt" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlay.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTextureOverlay.shader" />

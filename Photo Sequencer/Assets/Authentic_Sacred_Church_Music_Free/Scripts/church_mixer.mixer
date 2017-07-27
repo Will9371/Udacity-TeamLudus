@@ -1,0 +1,504 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: church_mixer
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300001}
+  m_Snapshots:
+  - {fileID: 24500003}
+  m_StartSnapshot: {fileID: 24500003}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters:
+  - guid: 4d2d723a1e6e9014c9749759a40d52f4
+    name: baroque_cello_major
+  - guid: a0fca3f583dc01f4aa582ca3faeb8b22
+    name: baroque_choir
+  - guid: 957e8a52184ea6b4b96ef0edfa80c477
+    name: baroque_organ_major
+  - guid: e3614872d5553e84db345ee3d1705d52
+    name: baroque_organ_minor
+  - guid: 18e5b5ac69b6e814f9972f29b22a90c0
+    name: dynamic_organ_forte
+  - guid: 604a5fbd546860c4f87c686c6ea10151
+    name: dynamic_organ_fortissimo
+  - guid: 210128e46265ed940acf4b954d541661
+    name: dynamic_organ_medium
+  - guid: 2f7a0c04b2d82584b861af911260f645
+    name: dynamic_organ_soft
+  - guid: 21d10b5aa86c3ab4dbf2a8fef13ed0c3
+    name: gregorian_chant
+  - guid: 32482d640d0cba14d9036f325ee3f9a0
+    name: gregorian_ensemble
+  - guid: 04881c6e52a4a184b97fdd9b6b74d793
+    name: medieval_organ_major
+  - guid: f42a4260563913546b8d17d63c36c1e4
+    name: medieval_organ_minor
+  m_AudioMixerGroupViews:
+  - guids:
+    - 960590ecc67c4254f87ee2c84526ac70
+    - 4abf0432379f71f438d93a4975f26e63
+    - 5eecb06d75b39f34d9fb0405a301f8c8
+    - e7e22aee0fb96ab49bbf78046608a47f
+    - 55aae37a21e38bd46a723b5995546cfb
+    - 928687aaea0d5aa48a9eb284628cbc70
+    - a0193939be0bb9f41a9c22654b3611a3
+    - cbb28dc96f21d8d4e83b043d742e8a1d
+    - dddf379dab97548489138611e984ed5e
+    - d8a9a07206a7c4d47bc2878d218153c9
+    - f886673fbaefd44499c05737ac41d278
+    - a75bf547535f03a49b321a1feb786d95
+    - 735f0fd8257e60346b70287a7a334f33
+    - afe98d3d594568b4099bde549839e7f0
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500003}
+--- !u!243 &24300001
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 960590ecc67c4254f87ee2c84526ac70
+  m_Children:
+  - {fileID: 24309194}
+  m_Volume: f9813093f49a42a45a3b77162e2f8fb2
+  m_Pitch: 1184878a94777fd498a8975f4b09b5bd
+  m_Effects:
+  - {fileID: 24400002}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24302612
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: gregorian_chant
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: cbb28dc96f21d8d4e83b043d742e8a1d
+  m_Children: []
+  m_Volume: 21d10b5aa86c3ab4dbf2a8fef13ed0c3
+  m_Pitch: 436c50b78eed23643a2fa841563a8e48
+  m_Effects:
+  - {fileID: 24429942}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24309194
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Music
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 4abf0432379f71f438d93a4975f26e63
+  m_Children:
+  - {fileID: 24333368}
+  - {fileID: 24395006}
+  - {fileID: 24364200}
+  - {fileID: 24342784}
+  - {fileID: 24338956}
+  - {fileID: 24302612}
+  - {fileID: 24330622}
+  - {fileID: 24334014}
+  - {fileID: 24318628}
+  - {fileID: 24357152}
+  - {fileID: 24311340}
+  - {fileID: 24325820}
+  m_Volume: 53d55fa502ed52a4da9ef8560c0abd96
+  m_Pitch: 9ef1bfcde2076844e8d2924f29f4ab4e
+  m_Effects:
+  - {fileID: 24453010}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24311340
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: dynamic_organ_forte
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 735f0fd8257e60346b70287a7a334f33
+  m_Children: []
+  m_Volume: 18e5b5ac69b6e814f9972f29b22a90c0
+  m_Pitch: bba47ebf4b591b64f8f8fba718ca3adf
+  m_Effects:
+  - {fileID: 24403762}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24318628
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: dynamic_organ_soft
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: f886673fbaefd44499c05737ac41d278
+  m_Children: []
+  m_Volume: 2f7a0c04b2d82584b861af911260f645
+  m_Pitch: 0bee7995d2332854fb4dd3057159f8b1
+  m_Effects:
+  - {fileID: 24449244}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24325820
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: dynamic_organ_fortissimo
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: afe98d3d594568b4099bde549839e7f0
+  m_Children: []
+  m_Volume: 604a5fbd546860c4f87c686c6ea10151
+  m_Pitch: 8914131737ef9884ab42922138780ec3
+  m_Effects:
+  - {fileID: 24402894}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24330622
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: gregorian_ensemble
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: dddf379dab97548489138611e984ed5e
+  m_Children: []
+  m_Volume: 32482d640d0cba14d9036f325ee3f9a0
+  m_Pitch: 00b0770788280ac41945ed63885b9e7f
+  m_Effects:
+  - {fileID: 24479512}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24333368
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: baroque_organ_minor
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 5eecb06d75b39f34d9fb0405a301f8c8
+  m_Children: []
+  m_Volume: e3614872d5553e84db345ee3d1705d52
+  m_Pitch: 275173d73df9dd04da0dd59477a5f159
+  m_Effects:
+  - {fileID: 24427456}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24334014
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: baroque_cello_major
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: d8a9a07206a7c4d47bc2878d218153c9
+  m_Children: []
+  m_Volume: 4d2d723a1e6e9014c9749759a40d52f4
+  m_Pitch: fb42e4126daa15d4bb686f677ca24153
+  m_Effects:
+  - {fileID: 24417396}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24338956
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: baroque_choir
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: a0193939be0bb9f41a9c22654b3611a3
+  m_Children: []
+  m_Volume: a0fca3f583dc01f4aa582ca3faeb8b22
+  m_Pitch: 3f49661074b7b8c4989daa2350b42c1c
+  m_Effects:
+  - {fileID: 24444850}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24342784
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: medieval_organ_major
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 928687aaea0d5aa48a9eb284628cbc70
+  m_Children: []
+  m_Volume: 04881c6e52a4a184b97fdd9b6b74d793
+  m_Pitch: 729c8d4cd0972404b9453742e6762915
+  m_Effects:
+  - {fileID: 24400812}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24357152
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: dynamic_organ_medium
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: a75bf547535f03a49b321a1feb786d95
+  m_Children: []
+  m_Volume: 210128e46265ed940acf4b954d541661
+  m_Pitch: e7e399512a847c4478ab8b4077f28f67
+  m_Effects:
+  - {fileID: 24481286}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24364200
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: medieval_organ_minor
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 55aae37a21e38bd46a723b5995546cfb
+  m_Children: []
+  m_Volume: f42a4260563913546b8d17d63c36c1e4
+  m_Pitch: 8e474ff38ae27314f9ec817d1077f7a2
+  m_Effects:
+  - {fileID: 24403056}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24395006
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: baroque_organ_major
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: e7e22aee0fb96ab49bbf78046608a47f
+  m_Children: []
+  m_Volume: 957e8a52184ea6b4b96ef0edfa80c477
+  m_Pitch: c5eb25295db72f644ad540cca39d0e5d
+  m_Effects:
+  - {fileID: 24498008}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400002
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 36ee6ccae64a4bb48af1778a4f6ed3dd
+  m_EffectName: Attenuation
+  m_MixLevel: d6e0455b393334d4eac4db9c33a26ef2
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24400812
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 2bfd5b82018e9164ab0223135c993ca9
+  m_EffectName: Attenuation
+  m_MixLevel: 5427a65c27d68b24398a86b1b0c08694
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24402894
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 7ed0889cfb03ba54dbab644baf5616a0
+  m_EffectName: Attenuation
+  m_MixLevel: f865ffbc9fb424a4c8ee5c553d5678af
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24403056
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 6f709a0ba923e404e82a69c41c1df263
+  m_EffectName: Attenuation
+  m_MixLevel: 5dbe8401de159a84f90f4ac3895fb5e5
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24403762
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 528f976343f356046a3fdf417c7f767f
+  m_EffectName: Attenuation
+  m_MixLevel: 9521614ed9f65974ba7b19c80d2b8292
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24417396
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 235ea4420d8f46843b1e456222c87384
+  m_EffectName: Attenuation
+  m_MixLevel: de4fe7a5a1962654f8b51b31732259f3
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24427456
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 6ce32f008aeab9e49ba48d061ba51b97
+  m_EffectName: Attenuation
+  m_MixLevel: 7e90824d77020c34789199a9323bad42
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24429942
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: a8637dd7df8192047ac26685d20a1f40
+  m_EffectName: Attenuation
+  m_MixLevel: 90ba9de97c11443438b0ec6283f21336
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24444850
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: e1e43701cdb8b104bac38f8246cecbfa
+  m_EffectName: Attenuation
+  m_MixLevel: 50e9dce9cd36605498b5b3227ee31616
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24449244
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: f511305f6d8532140b6dd0c9c1179ba8
+  m_EffectName: Attenuation
+  m_MixLevel: 0e6cafc3d01b9b342aa5cad8366defdf
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24453010
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 828977fdf9a300e499c9470f030963ad
+  m_EffectName: Attenuation
+  m_MixLevel: cad1a431d7054a648967813809c041c7
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24479512
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: b6d488351614a9c4ea92aeb29df16a27
+  m_EffectName: Attenuation
+  m_MixLevel: 3b11dfb6e31da954481dee9749e8d187
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24481286
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: a7a270c202dd5f9439285e7037d36484
+  m_EffectName: Attenuation
+  m_MixLevel: 6dad4853db0d45c4292313795eff5978
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24498008
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: bff51e09e7d7f024f96d45297848a1b0
+  m_EffectName: Attenuation
+  m_MixLevel: 2afc42f4415a67f498eee7f46415e052
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500003
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 2b376e7669a769744bf191427f35fcf6
+  m_FloatValues:
+    53d55fa502ed52a4da9ef8560c0abd96: 0.13552584
+  m_TransitionOverrides: {}

@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 	//***
 
 	public const int SERIES_LENGTH = 5;
-	public GameObject WinScreen;
+	public GameObject WinScreen, StartScreen;
 	GameObject[] orbs = new GameObject[SERIES_LENGTH];
 	[SerializeField] GameObject[] pedestals, orbsInOrder;
 	[SerializeField] GameObject glassOrb;
@@ -29,7 +29,21 @@ public class GameManager : MonoBehaviour
 
 	void Start()  //randomize starting order of orbs on pedestals when game starts
 	{
+		StartScreen.SetActive(true);
 		WinScreen.SetActive(false);
+		glassOrb.SetActive(false);
+
+		foreach(GameObject orb in orbsInOrder)
+			orb.SetActive(false);
+	}
+
+	public void OnStartClick()
+	{
+		StartScreen.SetActive(false);
+		glassOrb.SetActive(true);
+
+		foreach(GameObject orb in orbsInOrder)
+			orb.SetActive(true);
 
 		randomSeries = CreateRandomSeries(SERIES_LENGTH);
 
@@ -95,11 +109,22 @@ public class GameManager : MonoBehaviour
 	{
 		Debug.Log("You win!");
 		WinScreen.SetActive(true);
+		gameObject.GetComponent<AudioSource>().Play();
 		//Show victory text and give player option to restart game
 	}
 
 	public void OnRestartClick()
 	{
-		Start();
+		WinScreen.SetActive(false);
+
+		randomSeries = CreateRandomSeries(SERIES_LENGTH);
+
+		int i = 0;
+		foreach(GameObject orb in orbsInOrder)	//Iterate through orbsInOrder
+		{
+			orb.transform.parent = pedestals[randomSeries[i]].transform;	//place each at corresponding random pedestal
+			orb.transform.localPosition = Vector3.zero + new Vector3 (0f, 0.88f, 0f);
+			i++;
+		}
 	}
 }

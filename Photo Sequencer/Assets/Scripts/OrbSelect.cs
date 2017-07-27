@@ -22,6 +22,8 @@ public class OrbSelect : MonoBehaviour
 
 	public void OnPointerClick()
 	{
+		gameObject.GetComponent<AudioSource>().Play();
+
 		orbClicked = this.gameObject;
 		if (transform.parent.gameObject != swapPedestal)
 		{											
